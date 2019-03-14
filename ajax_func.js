@@ -35,7 +35,7 @@ function add_new_item() {
         type: "POST",
         url: "ajax_insert.php",
         dataType: "json",
-        data: {date: date, header: header, body: body, status : status}
+        data: {date: date, header: header, body: body, status: status}
     }).done(function (data) {
         $('#tbody').empty();
         get_table_items();

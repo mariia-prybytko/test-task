@@ -2,7 +2,7 @@
 
 $mysqli = new mysqli('localhost', 'maria', 'maria', 'project');
 
-$sql = "SELECT * FROM task";
+$sql = "SELECT * FROM task ORDER BY date";
 
 $results = $mysqli->query($sql);
 
